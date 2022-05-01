@@ -44,7 +44,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="hero-btn btn">Заказать услугу</button>
+            <button type="button" class="hero-btn btn " data-modal-open >Заказать услугу</button>
             </div>
         </section>
             
@@ -90,9 +90,24 @@
             <div class="container">
             <h2 class="whatwedo-title basic-title">Чем мы занимаемся</h2>
             <ul class="whatwedo-list list">
-                <li class="whatwedo-item" ><img src="./images/actions1.jpg" alt="Десктопные приложения" width="370" class="whatwedo-img"></li>
-                <li class="whatwedo-item" ><img src="./images/actions2.jpg" alt="Мобильные приложения" width="370" class="whatwedo-img"></li>
-                <li class="whatwedo-item" ><img src="./images/actions3.jpg" alt="Дизайнерские решения" width="370" class="whatwedo-img"></li>
+                <li class="whatwedo-item" >
+                    <div class="whatwedo-item-description">
+                    <img src="./images/actions1.jpg" alt="Десктопные приложения" width="370" class="whatwedo-img">
+                    <h3 class="whatwedo-item-title h3">Десктопные приложения</h3>
+                    </div>
+                </li>
+                <li class="whatwedo-item" >
+                    <div class="whatwedo-item-description">
+                    <img src="./images/actions2.jpg" alt="Мобильные приложения" width="370" class="whatwedo-img">
+                    <h3 class="whatwedo-item-title h3">Мобильные приложения</h3>
+                    </div>
+                </li>
+                <li class="whatwedo-item" >
+                    <div class="whatwedo-item-description">
+                    <img src="./images/actions3.jpg" alt="Дизайнерские решения" width="370" class="whatwedo-img">
+                    <h3 class="whatwedo-item-title h3">Дизайнерские решения</h3>
+                    </div>
+                </li>
             </ul>
             </div>
         </section>
@@ -319,5 +334,16 @@
             </div>
 
         </footer>
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal" >
+                   <button class="modal-close-btn" data-modal-close>
+                    <svg class="modal-close-btn-img" height="11px" width="11px">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>  
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
